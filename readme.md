@@ -25,11 +25,11 @@ npm install
    
     `conf_db_name   = 'delilah', // database name` 
     
-     `conf_user     = 'root', // user name'
+     `conf_user     = 'root', // user name`
     
-     `conf_password = '', // password'
+     `conf_password = '', // password`
     
-     `conf_port     = '3306'; // port number'
+     `conf_port     = '3306'; // port number`
 
 ## 4- Realizar un bulk-insert:
 ~~~
