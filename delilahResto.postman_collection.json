@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"nombre_usuario\": \"Mariana\",\r\n\t\"apellido_usuario\" : \"Lopez\",\r\n\t\"email\": \"marianaLopez@hotmail.com\",\r\n\t\"usuario\": \"Mariana\",\r\n\t\"password\": \"1234\",\r\n\t\"telefono\": \"3513720072\",\r\n\t\"domicilio\": \"Rafael Nuñez 4520\"\r\n}",
+							"raw": "{\r\n\t\"nombre_usuario\": \"Ariana\",\r\n\t\"apellido_usuario\" : \"Nieto\",\r\n\t\"email\": \"ariananieto@gmail.com\",\r\n\t\"usuario\": \"ariana\",\r\n\t\"password\": \"1234\",\r\n\t\"telefono\": \"54887156\",\r\n\t\"domicilio\": \"Av. St 3033\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -43,7 +43,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\t\r\n        \"usuario\": \"Ariana\",\r\n        \"password\": \"1234\"\r\n}",
+							"raw": "{\t\r\n        \"usuario\": \"janedoe\",\r\n        \"password\": \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
