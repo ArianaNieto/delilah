@@ -20,10 +20,15 @@ npm install
 - Abrir el archivo `createDB.sql` que se encuentra en la carpeta `scripts`, copiar las queries y ejecutarlas en el motor de base de datos en MySQL.
 
 - Abrir el archivo `db_connection_data` que se encuentra dentro de la carpeta `config` y completar con tus datos
+
    `conf_db_host = 'localhost', // host
+   
     conf_db_name   = 'delilah', // database name
+    
     conf_user     = 'root', // user name
+    
     conf_password = '', // password
+    
     conf_port     = '3306'; // port number
 `
 
