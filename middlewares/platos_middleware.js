@@ -7,7 +7,7 @@ const datosPlato = async (req, res, next) => {
     {replacements: [plato.nombre], type: db.QueryTypes.SELECT})
     .then((respuesta)=> {
       console.log(respuesta)
-      if(respuesta[0].nombre === plato.nombre) {
+      if(respuesta.length > 0 && respuesta[0].nombre === plato.nombre) {
         res.status(406).send("Plato con ese nombre ya existe en la DB");
       }else {
         next();
@@ -22,9 +22,13 @@ const platoFromDB = (req,res,next) =>{
     db.query('SELECT * FROM platos WHERE id = :id',
     {replacements:plato, type: db.QueryTypes.SELECT})
     .then((respuesta)=>{
-      if(respuesta[0].id > 0){
+      console.log(respuesta)
+      if(respuesta.length > 0){
         next();
-      };
+      }
+      else{
+        res.status(404).send("El plato no existe")
+      }
     }).catch((error)=>{
       res.status(404).send(error)
     });

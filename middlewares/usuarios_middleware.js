@@ -22,8 +22,7 @@ const dataLogin = (req, res, next) => {
 const tokenIsAdmin = (req, res, next) => {
   const token = req.headers.authorization.split(' ')[1];
   const usuario = jwt.verify(token, firma);
-
-  if (usuario.isAdmin.data[0] === 1) {
+  if (usuario.isAdmin === 1) {
       req.usuario = usuario;
       next();
   } else {

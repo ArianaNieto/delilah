@@ -10,7 +10,7 @@ usuario VARCHAR(45) NOT NULL UNIQUE,
 password VARCHAR(100) NOT NULL,
 telefono VARCHAR(45) NOT NULL,
 domicilio VARCHAR(100) NOT NULL,
-isAdmin BIT(1) NOT NULL
+isAdmin TINYINT(1) NOT NULL
 );
 
 CREATE TABLE platos (
@@ -18,7 +18,7 @@ id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 nombre VARCHAR(100) NOT NULL,
 precio DECIMAL(9,2) NOT NULL,
 url_imagen VARCHAR(100),
-disponible BIT(1) NOT NULL
+disponible TINYINT(1) NOT NULL
 );
 
 CREATE TABLE estados (
@@ -47,8 +47,8 @@ id_usuarios INT NOT NULL,
 id_forma_pago INT NOT NULL,
 id_estado INT NOT NULL DEFAULT 1,
 hora TIME,
-precio_total DECIMAL (9,2) NOT NULL,
-pagado BIT(1) DEFAULT 1
+precio_total DECIMAL (9,2) NOT NULL DEFAULT 0,
+pagado TINYINT(1) DEFAULT 1
 );
 ALTER TABLE pedidos
 ADD CONSTRAINT FK_PEDIDOS_USUARIOS
